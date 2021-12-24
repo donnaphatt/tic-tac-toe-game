@@ -81,7 +81,7 @@ function App() {
   const winner = checkWin(gameState);
 
   const onCellClick = (index) => {
-    if (gameState[index] != "" || Boolean(winner)) {
+    if (gameState[index] !== "" || Boolean(winner)) {
       return;
     }
     const newGameState = [...gameState];
